@@ -150,25 +150,9 @@ main {
 
 }
 
-/* .banner .b1 {
-    background-color: #469165;
-    padding: 16px;
-} */
-
-/* .banner .b2 {
-    color: #ffffff;
-    background-color: rgb(78, 74, 74);
-    padding: 3px;
-    border: #ffffff solid 1px;
-} */
-
 .cards {
     text-align: center;
 }
-
-/* .cards .card-header {
-    margin-top: 50px;
-} */
 
 .cards .card-header h1 {
     color: #001931;
@@ -216,8 +200,6 @@ main {
     display: flex;
     align-items: center;
     gap: 60px;
-    /* padding: 120px; */
-
 }
 
 .brain .solution {
@@ -359,5 +341,11 @@ button {
 button:hover {
     border: none;
     outline: none;
+    transform: scale(1.1);
+}
+footer .icons li{
+    cursor: pointer;
+}
+footer .icons li:hover{
     transform: scale(1.1);
 }
