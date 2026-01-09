@@ -52,37 +52,74 @@ body {
 .banner {
     background-image: url(./assets/hero-bg.png);
 }
-.hero .bannerbtn{
+
+.hero .bannerbtn {
     background-color: #ffffff;
     border-radius: 5px;
     padding: 3px;
 }
-.bannerbtn img{
-margin: auto 0;
-align: center;
+
+.bannerbtn img {
+    margin: auto 0;
 
 }
-.bannerbutton-top{
+
+.bannerbutton-top {
     color: rgb(46, 87, 6);
 }
-.hero .hero-header{
+
+.hero .hero-header {
     color: #ffffff;
     text-align: center;
     width: 770px;
-    font-size:x-large;
+    font-size: x-large;
 }
-#h1-green{
+
+#h1-green {
     color: green;
 }
-.banner .b1{
+
+.banner .b1 {
     background-color: seagreen;
     padding: 3px;
 
 }
-.banner .b2{
+
+.banner .b2 {
     color: #ffffff;
     background-color: rgb(78, 74, 74);
     padding: 3px;
     border: #ffffff solid 1px;
-    
 }
+
+.cards {
+    background-color: #ffffff;
+    justify-items: center;
+    text-align: center;
+}
+
+.card-container {
+    max-width: 1360px;
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+    justify-content: space-around;
+}
+
+.card-content {
+    max-width: 320px;
+    padding: 24px;
+    box-shadow: black;
+}
+
+.card-content h3 {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.card-icon {
+    background-color: red;
+    padding: 10px;
+    border-radius: 50%;
+}
+
