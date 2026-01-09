@@ -1,11 +1,10 @@
 body {
-    background-color: rgb(212, 240, 231);
+    font-family: "Inter", sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
-    max-width: 1600px;
 }
 
 .navbar {
@@ -18,18 +17,19 @@ body {
 
 .menu {
     margin: auto 0;
-    gap: 20px;
 }
 
 .menulist {
     display: inline;
     display: flex;
-    gap: 20px;
+    gap: 32px;
 }
 
 .menu li {
     display: inline;
     list-style: none;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .navbutton {
@@ -39,9 +39,18 @@ body {
 }
 
 .navbar button {
-    background-color: darkgreen;
-    color: #ffffff;
-    padding: 5px;
+    background-color: #469165;
+    color: white;
+    border: none;
+    padding: 13px 16px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.navlogo img {
+    height: 60px;
+    width: 140px;
 }
 
 .hero {
@@ -51,12 +60,49 @@ body {
 
 .banner {
     background-image: url(./assets/hero-bg.png);
+    height: 674px;
+}
+
+.bannerbutton {
+    display: flex;
+    gap: 16px;
+
+}
+
+.bannerbutton button {
+    background: none;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.button-two {
+    background-color: #469165;
+    padding: 16px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 251px;
+
+}
+
+.button-three {
+    color: #ffffff;
+    padding: 16px;
+    border: #ffffff solid 1px;
+    display: flex;
+    gap: 10px;
+    background: transparent;
+    justify-content: center;
+    width: 198px;
 }
 
 .hero .bannerbtn {
     background-color: #ffffff;
     border-radius: 5px;
-    padding: 3px;
+    padding: 10px 12px;
+    border-radius: 1000px;
+    display: flex;
+    gap: 6px;
 }
 
 .bannerbtn img {
@@ -65,66 +111,99 @@ body {
 }
 
 .bannerbutton-top {
-    color: rgb(46, 87, 6);
+    color: #469165;
+    font-size: 16px;
+    font-weight: 500;
+    background: none;
 }
 
 .hero .hero-header {
     color: #ffffff;
     text-align: center;
     width: 770px;
-    font-size: x-large;
+    height: 168px;
+
+}
+
+.hero .hero-header h1 {
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.hero .banner-text {
+    margin: 16px 0 32px 0;
+}
+
+.hero p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 #h1-green {
-    color: green;
+    color: #30B868;
 }
 
-.banner .b1 {
-    background-color: seagreen;
-    padding: 3px;
+main {
+    padding: 120px;
 
 }
 
-.banner .b2 {
+/* .banner .b1 {
+    background-color: #469165;
+    padding: 16px;
+} */
+
+/* .banner .b2 {
     color: #ffffff;
     background-color: rgb(78, 74, 74);
     padding: 3px;
     border: #ffffff solid 1px;
-}
+} */
 
 .cards {
-    background-color: #ffffff;
-    justify-items: center;
     text-align: center;
 }
 
-.cards .card-header {
+/* .cards .card-header {
     margin-top: 50px;
-}
+} */
 
 .cards .card-header h1 {
     color: #001931;
     font-weight: 700;
     margin-bottom: 16px;
+    font-size: 48px;
 }
 
 .card-container {
-    max-width: 1360px;
     display: flex;
     gap: 24px;
-    padding: 24px;
-    justify-content: space-around;
+    margin: 44px 0px;
+}
+
+.card-header p {
+    font-size: 16px;
+    color: #627382;
 }
 
 .card-content {
-    max-width: 320px;
-    padding: 24px;
-    box-shadow: black;
+    width: 322px;
+    padding: 70px 24px;
+    box-shadow: 0px 0px 8px 0px #0000000F;
+
 }
 
 .card-content h3 {
     font-weight: 600;
-    margin-bottom: 16px;
+    margin: 16px 0px;
+    font-size: 24px;
+    color: #001931;
+}
+
+.card-content p {
+    color: #627382;
 }
 
 .card-icon {
@@ -137,7 +216,7 @@ body {
     display: flex;
     align-items: center;
     gap: 60px;
-    padding: 120px;
+    /* padding: 120px; */
 
 }
 
@@ -174,17 +253,15 @@ body {
 .brain .solution li {
     margin-bottom: 16px;
     font-weight: 500;
-}
-
-.brain .solution li img {
-    align-items: baseline;
-
+    display: flex;
+    gap: 6px;
 }
 
 .access {
     background-color: #F7F6F2;
     text-align: center;
     padding: 40px 80px;
+    margin-top: 120px;
 }
 
 .access h1 {
@@ -201,11 +278,29 @@ body {
     margin: 10px;
 }
 
-.access button {
+.access-button {
     background-color: #469165;
-    padding: 5px;
+    padding: 16px;
     border-radius: 5px;
-    margin: 6px;
+    margin: 24px 0 16px 0;
+    display: flex;
+    gap: 10px;
+    width: 194px;
+    justify-content: center;
+}
+
+.access-button:hover {
+    transform: scale(1.1);
+}
+
+.access-button button {
+    background: none;
+    color: #ffffff;
+}
+
+.access .bottom {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -218,7 +313,7 @@ footer {
 .footertop {
     display: flex;
     justify-content: space-between;
-    border-bottom: #cedaf2 dotted;
+    margin-bottom: 80px;
 }
 
 footer p {
@@ -231,7 +326,38 @@ footer h6 {
     font-weight: 500;
 }
 
+footer .icons {
+    list-style: none;
+}
+
+footer .icons li {
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+footer .icons li i {
+    color: black;
+}
+
 footer .social-icon .icons {
     display: flex;
-    gap: 5px;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.hr {
+    border-bottom: 1px solid #E5E7EB;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    border: none;
+    outline: none;
+    transform: scale(1.1);
 }
