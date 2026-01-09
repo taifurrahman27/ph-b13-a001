@@ -137,6 +137,7 @@ body {
     display: flex;
     align-items: center;
     gap: 60px;
+    padding: 120px;
 
 }
 
@@ -178,4 +179,31 @@ body {
 .brain .solution li img {
     align-items: baseline;
 
+}
+
+.access {
+    background-color: #F7F6F2;
+    text-align: center;
+    padding: 40px 80px;
+}
+
+.access h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #001931;
+    margin-bottom: 16px;
+}
+
+.access p {
+    color: #627382;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.access button{
+    background-color: #469165;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 6px;
 }
