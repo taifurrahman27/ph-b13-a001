@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine;
+    background-color: rgb(212, 240, 231);
 }
 
 * {
@@ -98,6 +98,16 @@ body {
     text-align: center;
 }
 
+.cards .card-header {
+    margin-top: 50px;
+}
+
+.cards .card-header h1 {
+    color: #001931;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
 .card-container {
     max-width: 1360px;
     display: flex;
@@ -123,3 +133,49 @@ body {
     border-radius: 50%;
 }
 
+.brain {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.brain .solution {
+    vertical-align: auto;
+}
+
+.brain .solution h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #469165;
+    margin-bottom: 16px;
+}
+
+.brain .solution h1 {
+    font-size: 48px;
+    font-weight: 700px;
+    color: #001931;
+    margin-bottom: 16px;
+}
+
+.brain .solution p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #627382;
+    margin-bottom: 40px;
+}
+
+.brain .solution ul {
+    list-style: none;
+    color: #001931;
+}
+
+.brain .solution li {
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.brain .solution li img {
+    align-items: baseline;
+
+}
